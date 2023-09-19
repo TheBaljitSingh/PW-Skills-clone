@@ -6,6 +6,5 @@ import Pw from './Pw';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    // <App />
-    <Pw />
+    <App />
 );

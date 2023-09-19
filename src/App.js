@@ -1,57 +1,160 @@
-export default function App(){
-  return (
-    <div className="bg-slate-500 grid place-content-center snap-center h-screen">
+export default function Pw(){
+  return(
+      <div>
+          {/* navbar start from here */}
+          <nav className="w-full h-14 bg-indigo-200 flex justify-between items-center
+          px-4 md:px-8 sticky top-0">
+              <div className="text-2xl text-indigo-700 font-bold">
+                  PW Skills
+              </div>
 
-    <h1 className="text-yellow-500 text-4xl m-6">CSS Card</h1>
-    {/* first card */}
-    <div >
-      <div className="p-6 max-w-sm mx-auto  hover:bg-slate-200 cursor-pointer  bg-white rounded-xl shadow-lg flex items-center space-x-4">
-        <div className="shrink-0">
-        <img className="h-12 w-12" src="https://upload.wikimedia.org/wikipedia/commons/7/76/Physics_wallah_logo.jpg?20211017183441" alt="" />
-        </div>
-        <div>
-          <div className="text-xl font-medium text-black">
-          Tailwind CSS
-          <p className="text-slate-500 text-base">By Hitesh Sir</p>
-          </div>
-        </div>
-        </div>
-    </div>
-    {/* second card */}
-    {/* <div className="mt-2">
-      <div className="p-6 max-w-sm mx-auto bg-white rounded-xl">
-        <div className=" flex justify-center items-center pb-2">
-          <img className="h-12 w-12 items-center" src="https://upload.wikimedia.org/wikipedia/commons/7/76/Physics_wallah_logo.jpg?20211017183441" alt="" />
-        </div>
-        <div className="">
-          <div className="flex justify-center  text-xl font-medium text-black">Tailwind CSS</div>
-          <p className="text-center">By Hitesh Sir</p>
-        </div>
+              <ul className=" list-none md:flex font-semibold hidden">
+                  <li className="mx-[10px] cursor-pointer"><a href="">Home</a></li>
+                  <li className="mx-[10px] cursor-pointer"><a href="">Abut Us</a></li>
+                  <li className="mx-[10px] cursor-pointer"><a href="">Contact Us</a></li>
+              </ul>
+
+              <div>
+              <button className="hidden md:block p-2 bg-blue-700 rounded-md text-white cursor-pointer"><a href="">Login/SignUp</a></button>
+              <button className="md:hidden"><a className="text-4xl" href="#">&#8801;</a></button>
+
+              </div>
+          </nav>
+
+          {/* navbar end here */}
+
+          {/* image section start here */}
+          <header className="w-full h-auto">
+              <img className="w-full hidden md:block" src="https://www.pw.live/files/repository001/website-banners/1694419623-skills_pew%20sign%20up%20web.-01%20%285%29.jpg" alt="" />
+              <img className=" w-full md:hidden" src="https://www.pw.live/files/repository001/website-banners/1694419623-skills_pew%20sign%20up%20web.-01%20%285%29.jpg" alt="" />
+          </header>
+          {/* image section end here */}
+
+          {/* our student section start */}
+
+          <div className="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+              <div className="w-full h-auto flex flex-wrap flex-col items-center">
+                  <p className="text-indigo-800 font-bold text-2xl md:text-4xl text-center">"Pure Hardwork, No ShortCuts"</p>
+                  <div className="w-32 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"></div>
+              </div>
+              {/* card */}
+              <div className="w-full flex flex-wrap justify-evenly"> 
+                  <div className="w-46 flex flex-col items-center mb-12 border-2 border-white rounded-xl ">
+                      <img className="w-44 h-44" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37732/preview.svg" alt="" />
+                      <p className="text-3xl font-bold text-white">600+</p>
+                      <p className="text-3xl font-bold text-gray-500">Different Courses</p>
+                  </div>
+                  <div className="w-46 flex flex-col items-center mb-12  border-2 border-white rounded-xl">
+                  <img className="w-44 h-44" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37732/preview.svg" alt="" />
+                      <p className="text-3xl font-bold text-white">700,000+</p>
+                      <p className="text-3xl font-bold text-gray-500">Student Enrolled</p>
+                  </div>
+
+                  <div className="w-46 flex flex-col items-center mb-12  border-2 border-white rounded-xl ">
+                  <img className="w-44 h-44" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37732/preview.svg" alt="" />
+                      <p className="text-3xl font-bold text-white">10,000+</p>
+                      <p className="text-3xl font-bold text-gray-500">Successfull Transition</p>
+                  </div>
+    
+              </div> 
+
+              </div>
+              {/* student end */}
+
+              {/* our product start */}
+
+              <div className="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+                  <div className=" w-full h-auto flex flex-wrap flex-col items-center">
+                      <p className="text-indigo-800 font-bold text-3xl md:text-4xl text-center">Our Products</p>
+                      <div className="w-36 h-1 border-b-4 border-yellow-400 mt-2 rounded-2xl md:mt-4 mb-12"></div>
+
+                  </div>
+                  {/* card */}
+                  <div className="w-[90%] h-auto flex flex-wrap justify-evenly "> 
+                      <div className="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+                          <img className="w-44 h-44" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37732/preview.svg" alt="" />
+                          <p className="text-3xl font-bold text-white">PW Skills Lab</p>
+                          <p className="text-xl font-light text-gray-500">Supercharge your project development with our robust lab.</p>
+                      </div>
+                      <div className="w-64 flex flex-col items-center mb-12 border-slate-600 border-2 rounded-xl p-2">
+                          <img className="w-44 h-44" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37732/preview.svg" alt="" />
+                          <p className="text-3xl font-bold text-white">Job Portal</p>
+                          <p className="text-xl font-light text-gray-500">Use exceptional templates for a stand-out resume minus the sign up process</p>
+                      </div>
+                      <div className="w-64 flex flex-col items-center mb-12 border-slate-600 border-2 rounded-xl p-2">
+                          <img className="w-44 h-44" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37732/preview.svg" alt="" />
+                          <p className="text-3xl font-bold text-white">Experiance Portal</p>
+                          <p className="text-xl font-light text-gray-500">PW Skills's self-placed experiance portal priorities hands-on training with 570+ internship projects</p>
+                      </div>
+                      <div className="w-64 flex flex-col items-center mb-12 border-slate-600 border-2 rounded-xl p-2">
+                          <img className="w-44 h-44" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37732/preview.svg" alt="" />
+                          <p className="text-3xl font-bold text-white">Become a Affliate</p>
+                          <p className="text-xl font-light text-gray-500">Explore affliate marketing opportunities with PW Skills and attain finincial freedom.</p>
+                      </div>
+                      <div className="w-64 flex flex-col items-center mb-12 border-white border-2 rounded-xl p-2">
+                          <img className="w-44 h-44" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37732/preview.svg" alt="" />
+                          <p className="text-3xl font-bold text-white">Hall of fame</p>
+                          <p className="text-xl font-light text-gray-500">Our student placements and 100K+ career transition speak volumes about our courses.</p>
+                      </div>
+                  
+
+                  </div>
+                  
+              </div>
+              {/* product end */}
+              {/* footer start from here */}
+
+              <footer className="w-full h-auto bg-gray-900 px-4 text-white pt-8 flex flex-col md:flex-row justify-between md:px-12 ">
+                  <div className="mb-2">
+                      <img className="w-42  h-16"  src="https://media.licdn.com/dms/image/C4D16AQHxUxtI0R1M0A/profile-displaybackgroundimage-shrink_200_800/0/1655272916771?e=2147483647&v=beta&t=9vinvOgEio-sbBfooxwm__COB1aA0bPaogW_yxj4rRA" alt="" />
+                      <p  className="my-4"><a href="mailto: abc@example.com">Baljitsingh692002@gmail.com</a></p>
+                      <img className="w-16 h-16 " src="https://img.freepik.com/premium-vector/iso-9001-2015-certification-iso-90012015-logo-iso-9000-certification_526569-648.jpg" alt="" />
+                  </div>
+                  <div className="mb-2">
+                      <h2 className="font-bold text-xl mt-4">PW Skills</h2>
+                      <div className="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"></div>
+                      <div>
+                      <p>About Us</p>
+                      <p>FAQs</p>
+                      <p>Privacy Policy</p>
+                      </div>
+
+                      <div>
+                          
+                      </div>
+                  </div>
+                  <div className="mb-2">
+                      <h2 className="font-bold text-xl mt-4">Products</h2>
+                      <div className="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"></div>
+                      <div>
+                      <p>PW Skills Lab</p>
+                      <p>Job Portal</p>
+                      <p>Experiance Portal</p>
+                      <p>Become an affliate</p>
+                      <p>Hall of fame</p>
+                      </div>
+
+                      <div>
+                          
+                      </div>
+                  </div>
+                  <div className="mb-2">
+                      <h2 className="font-bold text-xl mt-4">Links</h2>
+                      <div className="w-32 h-1 border-b-2 border-yellow-400 rounded-2xl my-2"></div>
+                      <div>
+                      <p>Discord Channel</p>
+                      <p>PW YouTube</p>
+                      <p>Career</p>
+                      </div>
+
+                      <div>
+                          
+                      </div>
+                  </div>
+              </footer>
+
+
 
       </div>
-    </div> */}
-
-    <button className="bg-sky-500 text-center mt-2 text-white text-base p-2 rounded-xl dark:bg-red-600 hover:bg-white hover:text-black">Buy now</button>
-
-    <div className="text-center my-4 bg-yellow-500 rounded-xl">
-      <p className="text-white md:text-green-500 sm:text-red-600">Lorem ipsum dolor sit amet.</p>
-    </div>
-
-    <div className="mt-3">
-      <div className="max-w-sm mx-auto bg-white rounded-xl overflow-hidden md:max-w-2xl">
-        <div className="md:flex">
-        <div>
-          <img className="h-48 w-full object-cover md:h-full md:w-48" src="https://images.pexels.com/photos/10172972/pexels-photo-10172972.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
-        </div>
-        <div className="p-8">
-          <div className="h-12 uppercase tracking-widest text-sm text-center text-indigo-500 font-semibold">An Awensome Card</div>
-          <a className="block mt-1 text-lg font-medium text-black hover:text-blue-700" href="#"> Tailwind CSS is amazing once you understand the <span className="bg-yellow-500 p-[2px] px-[14px]">power</span> of it</a>
-          <p className="mt-2 text-slate-500">Lorem ipsum dolor sit amet.</p>
-        </div>
-        </div>
-      </div>
-    </div>
-
-    </div>
   )
 }
