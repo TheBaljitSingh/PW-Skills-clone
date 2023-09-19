@@ -1,3 +1,7 @@
+# About this Repo.
+
+This is a clone of [Physics Wallah](https://www.pw.live/) "PW Skills" website. with NodeJS, Tailwind CSS is used for Styling.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
