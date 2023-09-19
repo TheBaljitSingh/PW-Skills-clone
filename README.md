@@ -1,6 +1,6 @@
 # About this Repo.
 
-This is a clone website or [Physics Wallah](https://www.pw.live/) "PW Skills". Tailwind CSS used with Nodejs.
+This is a clone of [Physics Wallah](https://www.pw.live/) "PW Skills" website. with NodeJS, Tailwind CSS is used for Styling.
 
 # Getting Started with Create React App
 
